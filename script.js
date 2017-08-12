@@ -34,12 +34,28 @@
 				templateUrl : 'pages/page6.html',
 				controller  : 'mainController'
 			})
+
+			.when('/page7', {
+				templateUrl : 'pages/page7.html',
+				controller  : 'mainController'
+			})
+
+			.when('/page8', {
+				templateUrl : 'pages/page8.html',
+				controller  : 'mainController'
+			})
+
+			.when('/page9', {
+				templateUrl : 'pages/page9.html',
+				controller  : 'mainController'
+			})
+
 			.otherwise({redirectTo: '/page1'});
 	});
 
 	// create the controller and inject Angular's $scope and $location
 	scotchApp.controller('mainController', function($scope, $location) {
-		$scope.pages = ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'];
+		$scope.pages = ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9'];
 
 		var location = $location.path();
 		var index = parseInt(location.replace("/page", ""));
