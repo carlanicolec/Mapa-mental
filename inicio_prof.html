@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- define angular app -->
-<html ng-app="scotchApp">
 
 <head>
 
@@ -11,19 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <title>Professor</title>
 
-    <!-- SCROLLS -->
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
-
-    <!-- SPELLS -->
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
-    <script src="script.js"></script>
-
-    <title>Simbolização</title>
-
-   
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -34,13 +21,20 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
 
-    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
-<body ng-controller="mainController">
+<body>
 
-   
+    <!--<div class="brand">Business Casual</div>
+    <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div> -->
+
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
@@ -59,12 +53,11 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="">Início</a>
+                        <a href="inicio_prof.html">Início</a>
                     </li>
                     <li>
-                        <a href="">Exercícios</a>
+                        <a href="exercicio_prof.html">Exercícios</a>
                     </li>
-                  
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -72,43 +65,65 @@
         <!-- /.container -->
     </nav>
 
+
+<div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12 text-center">
+                 <h1 class="brand-name">Professor</h1>
+                    <hr class="tagline-divider">
+                    <h2>
+                        <small>Nome:
+                            <strong>Nome do Professor</strong>
+                        </small>
+                        <br>
+                        <small>Matrícula:
+                            <strong>Matrícula do Professor</strong>
+                        </small>
+                        
+                        <br>
+                 </div>       
+            </div>
+        </div>    
+</div>
+
+
     <div class="container">
 
         <div class="row">
             <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center">Simbolização
-                    </h2>
-         			<hr>
-                </div>
                 <div class="col-lg-12 text-center">
+                 <h1 class="brand-name"></h1>
                     
-                    <br>
-                    <p>Três homens, Luís, Carlos e Paulo, são casados com Lúcia, Patrícia e Maria, mas não sabemos quem é casado com quem. Eles trabalham com Engenharia, Advocacia e Medicina,mas também não sabemos quem faz o quê. Com base nas dicas abaixo, tente descobrir o nome de cada marido, a profissão de cada um é o nome das suas esposas.</p>
-                  	<br>
-                    <div ng-view></div>
-                    <br>
-                    <button ng-click="previousPage()" type="button" name="button" class="btn btn-default btn-lg">Anterior</button>
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    <button ng-click="nextPage()" type="button" name="button" class="btn btn-default btn-lg">Próximo</button>
-                 
+                    <h2>
+                        <small> <a  href="exercicio_prof.html">Inserir novo exercício
+                        </small>
+                        <br>
+                        
+                        <br>
+                 </div>       
+            </div>
+        </div>    
+</div>
 
 
-                </div>			
- 			
-		                 
 
-    		</div>
 
-   		</div>
 
-   	</div>
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
 
 </body>
 
